@@ -58,6 +58,8 @@ body {
     background: #287976;
 }
 
+
+/* Progress Bar */
 #progress-bar {
     background-color: #FDF5D2;
     display: flex;
@@ -87,3 +89,48 @@ body {
     z-index: 2;
     position: relative;
 }
+
+
+/* Footer */
+#footer {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #216462;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 40px;
+    margin-top: 20px;
+}
+
+.footer-column {
+    float: left;
+    width: 50%;
+    flex: 50%;
+}
+
+.footer-headline {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+    color: #FED729;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    margin-bottom: 10px;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+

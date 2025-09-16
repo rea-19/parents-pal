@@ -12,13 +12,12 @@
     <div id="header"></div>
 
 
-    <h1>Events</h1>
+    <h1>Filter By:</h1>
+
+    <!-- Add Filters here -->
 
     <!-- Get the Event Records -->
-    <section id="records">
-
-        <!-- Event records will be dynamically inserted here -->
-    </section>
+    <section id="records"></section>
 
     <!-- The footer is fetched -->
     <div id="footer"></div>
@@ -27,13 +26,18 @@
 
     <!-- Javascript -->
     <script>
-    // Loads header
+    // Loads header and footer
         fetch("include/header.html")
             .then(res => res.text())
             .then(data => {
             document.getElementById("header").innerHTML = data;
         });
 
+        fetch("include/footer.html")
+            .then(res => res.text())
+            .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="/js/get_events.js"></script>
