@@ -20,21 +20,9 @@
 
     <div id="footer"></div>
 
-    <script>
-    // Loads header
-        fetch("include/header.html")
-            .then(res => res.text())
-            .then(data => {
-            document.getElementById("header").innerHTML = data;
-        });
-        fetch("include/footer.html")
-            .then(res => res.text())
-            .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        });
-
-    </script>
+    <!-- Javascript -->
+    <script src="/js/header_footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script src="/js/event_details.js"></script>
+	<script src="/js/get_events.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ function iterateRecords(data) {
 
 		// Filter out events for young adults, adults, seniors
         if (!age || /young adult|adult|senior/i.test(age)) {
-            return; // Skip this record
+            return; 
         }
 		
         // add points and price indicator depending on the cost of the event
