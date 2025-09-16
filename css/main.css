@@ -1,0 +1,89 @@
+/* Main styles for the website: navbar, footer, content */
+body {
+    background-color: #AFD0AC;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: #216462;
+    color: #ffff;
+    width: 100%;
+    overflow: auto;
+}
+
+#navbar-links a:first-child {
+    flex: 0 0 60px; 
+    padding: 0;
+}
+
+#navbar-logo {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+#navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    padding: 12px 0;
+    flex: 1 1 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-links a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 24px;
+    background: #287976;
+}
+
+#progress-bar {
+    background-color: #FDF5D2;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    justify-content: flex-end;
+}
+
+#progress-fill {
+    background-color: #FED729;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0 10px 10px 0;
+    z-index: 1;
+}
+
+#point-text {
+    font-style: italic;
+    margin-right: 30px;
+    color: #216462;
+    z-index: 2;
+    position: relative;
+}

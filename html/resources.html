@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parents Pal</title>
+    <title>Resources</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div id="header"></div>
 
 
-    <h1>Homepage</h1>
+    <h1>Resources</h1>
 
 
     <div id="footer"></div>
@@ -22,6 +22,13 @@
             .then(res => res.text())
             .then(data => {
             document.getElementById("header").innerHTML = data;
+        });
+    
+    // Loads footer
+        fetch("include/footer.html")
+            .then(res => res.text())
+            .then(data => {
+            document.getElementById("footer").innerHTML = data;
         });
 
     </script>
