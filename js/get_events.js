@@ -87,3 +87,4 @@ $(document).ready(function() {
 			.catch(error => console.error("Error fetching data from " + apiURL, error));
 	});
 });
+
