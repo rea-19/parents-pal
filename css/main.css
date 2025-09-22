@@ -6,6 +6,20 @@ body {
     padding: 0;
 }
 
+.checked {
+    color: orange;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.event-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
 #navbar {
     background-color: #216462;
     color: #ffff;
@@ -97,6 +111,23 @@ body {
   display: flex;
   justify-content: center;
   padding: 2rem;
+}
+
+.map-and-reviews {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.map {
+  flex: 1 1 55%;
+  height: 350px;
+  max-width: 600px;
+  border: 0;
 }
 
 .membership-card {
@@ -218,5 +249,113 @@ body {
     text-decoration: none;
     transition: color 0.2s;
 }
+
+#reviews{
+    flex: 1 1 35%;
+    max-height: 450px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(100, 173, 73, 0.267);
+}
+
+.reviews-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.reviews-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.reviews-box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.reviews-box-container .reviews-box {
+  margin-bottom: 15px;
+}
+.reviews-box{
+    width:100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.review-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .review-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .review-box{
+        width:100%;
+    }
+    .review-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+ 
 
 
