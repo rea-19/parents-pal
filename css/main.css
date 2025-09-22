@@ -4,6 +4,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #222;
+    line-height: 1.6;
 }
 
 .checked {
@@ -25,6 +27,7 @@ body {
     color: #ffff;
     width: 100%;
     overflow: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2)
 }
 
 #navbar-links a:first-child {
@@ -39,6 +42,9 @@ body {
     margin-left: 10px;
 }
 
+#navbar-logo a:hover{
+  color: #FED729s
+}
 
 #navbar-links {
     display: flex;
@@ -48,17 +54,23 @@ body {
 }
 
 #navbar-links a {
+    flex: 1;
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 17px;
     text-align: center;
     position: relative;
-    padding: 12px 0;
+    padding: 12px 20px;
     flex: 1 1 0; 
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 0.3 ease;
+}
+
+#navbar-links a:hover {
+  color: #FED729
 }
 
 #navbar-links a:not(:last-child)::after {
@@ -72,13 +84,16 @@ body {
     background: #287976;
 }
 
-
+#navbar-links a:first-child {
+    flex:1;
+    padding: 12px 20px;
+}
 /* Progress Bar */
 #progress-bar {
     background-color: #FDF5D2;
     display: flex;
     align-items: center;
-    height: 20px;
+    height: 22px;
     width: 100%;
     margin: 0;
     position: relative;
@@ -115,19 +130,29 @@ body {
 
 .map-and-reviews {
   display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  gap: 25px;
+  height: 50vh;
+  margin: 0;
+  width: 100%;
+  align-items: stretch;
+}
 
+.map, #reviews {
+    flex: 1;
+    height: 100%
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border: none;
 }
 
 .map {
-  flex: 1 1 55%;
-  height: 350px;
-  max-width: 600px;
-  border: 0;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15)
 }
 
 .membership-card {
@@ -251,19 +276,16 @@ body {
 }
 
 #reviews{
-    flex: 1 1 35%;
-    max-height: 450px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     overflow-y: auto;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(100, 173, 73, 0.267);
 }
 
 .reviews-heading{
     letter-spacing: 1px;
-    margin: 30px 0px;
-    padding: 10px 20px;
+    margin: 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -272,17 +294,11 @@ body {
 .reviews-heading h1{
     font-size: 2.2rem;
     font-weight: 500;
-    background-color: #202020;
+    background-color: #113213;
     color: #ffffff;
     padding: 10px 20px;
 }
-.reviews-heading span{
-    font-size: 1.3rem;
-    color: #252525;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+
 .reviews-box-container{
     display: flex;
     flex-direction: column;
