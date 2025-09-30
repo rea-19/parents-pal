@@ -1,0 +1,82 @@
+body{
+    text-align: center;
+}
+
+
+.membership-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+  width: 350px;
+  text-align: center;
+}
+
+.points-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: gold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.wallet-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.wallet-btn:hover {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Info Banner */
+.info-banner {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* Rewards */
+.rewards {
+  text-align: center;
+  padding: 2rem;
+}
+
+.rewards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.reward-card {
+  background: white;
+  border-radius: 12px;
+  width: 150px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.reward-card:hover {
+  transform: translateY(-5px);
+}
+
+.goal-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.goal-btn:hover {
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+}
