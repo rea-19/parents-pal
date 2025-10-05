@@ -10,8 +10,10 @@ let max = 0
 
 input.addEventListener("keyup", function () {
     finalValue = parseInt(input.value, 10);
+    console.log("finalValue", finalValue)
 });
 
 maxInput.addEventListener("keyup", function () {
     max = parseInt(maxInput.value, 10);
+    console.log("max", max)
 });
