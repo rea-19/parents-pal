@@ -14,3 +14,38 @@
     text-decoration: none;
     font-size: 17px;
 }
+
+/* Full-width progress bar under navbar */
+.progress-bar {
+  background-color: #FDF5D2;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  position: relative;
+  justify-content: flex-end;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+  background-color: #FED729;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 0 10px 10px 0;
+  z-index: 1;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+  font-style: italic;
+  margin-right: 20px;
+  color: #216462;
+  z-index: 2;
+  position: relative;
+  font-weight: bold;
+}
