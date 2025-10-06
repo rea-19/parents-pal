@@ -15,8 +15,9 @@
     font-size: 17px;
 }
 
+/*BEGINNING OF PROGRESS BAR EDITING*/
 /* Full-width progress bar under navbar */
-.progress-bar {
+/*.progress-bar {
   background-color: #FDF5D2;
   display: flex;
   align-items: center;
@@ -48,4 +49,5 @@
   z-index: 2;
   position: relative;
   font-weight: bold;
-}
+}*/
+/*END OF PROGRESS BAR EDITING*/
